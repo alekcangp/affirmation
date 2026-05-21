@@ -31,7 +31,7 @@ module.exports = async function (req, res) {
 
   try {
     const result = await ai.models.generateContent({
-      model: "gemma-3-27b-it",
+      model: "gemma-4-31b-it",
       contents: prompt
     });
     

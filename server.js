@@ -35,7 +35,7 @@ app.post('/api/generate', async (req, res) => {
 
   try {
     const result = await ai.models.generateContent({
-      model: "gemma-4-31b-it",
+      model: "gemini-3.1-flash-lite",
       contents: prompt
     });
     

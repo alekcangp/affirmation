@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Аффирмации</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <section class="hero">
+      <h1>Ежедневные аффирмации</h1>
+      <p class="subtitle">Сгенерируйте персонализированные аффирмации на основе вашего настроения и целей</p>
+    </section>
+
+    <section class="intro">
+      <p>Выберите, кого вы хотите слушать, и тему, которая вам важна прямо сейчас. Если не нашли подходящую тему — напишите свою!</p>
+    </section>
+
+    <section class="form-section">
+      <div class="step">
+        <h2>Кого вы хотите слушать?</h2>
+        <div class="gender-buttons">
+          <button class="gender-btn" data-gender="male">
+            <span class="icon">👨</span> Мужчина
+          </button>
+          <button class="gender-btn" data-gender="female">
+            <span class="icon">👩</span> Женщина
+          </button>
+        </div>
+      </div>
+
+      <div class="step">
+        <h2>Выберите тему</h2>
+        <div class="theme-grid">
+          <button class="theme-btn" data-theme="самооценка">Самооценка</button>
+          <button class="theme-btn" data-theme="уверенность">Уверенность</button>
+          <button class="theme-btn" data-theme="любовь">Любовь к себе</button>
+          <button class="theme-btn" data-theme="успех">Успех</button>
+          <button class="theme-btn" data-theme="здоровье">Здоровье</button>
+          <button class="theme-btn" data-theme="финансы">Финансы</button>
+          <button class="theme-btn" data-theme="отношения">Отношения</button>
+          <button class="theme-btn custom-theme-btn">Своя тема</button>
+        </div>
+        <div class="custom-input hidden">
+          <input type="text" id="customTheme" placeholder="О чем ваши аффирмации?" />
+        </div>
+      </div>
+
+      <div class="step">
+        <button class="generate-btn" disabled>
+          <span class="btn-text">✨ Сгенерировать аффирмации</span>
+          <span class="btn-loader hidden">⏳ Генерация...</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="result hidden">
+      <h2>Ваши аффирмации</h2>
+      <ul class="affirmations-list" id="affirmationsList"></ul>
+      <button class="regenerate-btn">🔄 Получить новые аффирмации</button>
+    </section>
+
+    <footer>
+      <p>Сделано с ❤️ для вашего роста</p>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
